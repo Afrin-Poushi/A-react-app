@@ -1,7 +1,11 @@
 //import './App.css';
 import Todo from "./components/Todo";
 
+
 function App(props) {
+
+  const taskList = props.tasks.map(task => task.name);
+
   return (
     <div className="To-Do list">
       <h1>CheckMate</h1>
